@@ -1,6 +1,6 @@
 import xmlrpc.client
 
-with xmlrpc.client.ServerProxy("http://192.168.100.35:8000/") as proxy:
+with xmlrpc.client.ServerProxy("http://68.183.143.117:8000/") as proxy:
     with open("urso.jpg", "rb") as handle:
         binary_data = xmlrpc.client.Binary(handle.read())
     print("Sending image to server")
